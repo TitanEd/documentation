@@ -3,7 +3,7 @@
 Welcome to the official documentation of [Your Project Name]!
 
 ## What is this project about?
-[Your Project Name] is a chatbot application built using Django and Python. It helps users interact with AI-driven responses while ensuring an efficient knowledge management system.
+TitanAI is a chatbot application built using Django and Python. It helps users interact with AI-driven responses while ensuring an efficient knowledge management system.
 
 ## Features:
 - AI-powered chatbot
