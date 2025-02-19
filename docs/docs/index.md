@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the official documentation of [Your Project Name]!
+Welcome to the official documentation of TitanAI!
 
 ## What is this project about?
 TitanAI is a chatbot application built using Django and Python. It helps users interact with AI-driven responses while ensuring an efficient knowledge management system.
