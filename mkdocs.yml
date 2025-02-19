@@ -1,6 +1,7 @@
-site_name: "My Chatbot Docs"
+site_name: "TitanEd Docs"
 theme:
   name: "material"  # This gives a clean UI
+  logo: "images/logo.png"
 
 nav:
   - Home: index.md
