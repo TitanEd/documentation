@@ -3,7 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - master  # Change to "master" if using master branch
+      - master  # Change to "main" if using main branch
 
 jobs:
   deploy:
@@ -21,11 +21,16 @@ jobs:
         run: pip install mkdocs mkdocs-material
 
       - name: Build MkDocs
-        run: mkdocs build
+        run: |
+          cd documentation/docs
+          mkdocs build
 
       - name: Ensure CNAME file exists
         run: |
+          cd documentation/docs
           echo "docs.titaned.com" > site/CNAME
 
       - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force
+        run: |
+          cd documentation/docs
+          mkdocs gh-deploy --force
