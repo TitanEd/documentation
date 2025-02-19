@@ -22,15 +22,15 @@ jobs:
 
       - name: Build MkDocs
         run: |
-          cd documentation/docs
+          cd docs
           mkdocs build
 
       - name: Ensure CNAME file exists
         run: |
-          cd documentation/docs
+          cd docs
           echo "docs.titaned.com" > site/CNAME
 
       - name: Deploy MkDocs
         run: |
-          cd documentation/docs
+          cd docs
           mkdocs gh-deploy --force
