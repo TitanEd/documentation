@@ -14,4 +14,5 @@ TitanBI is a chatbot application built using Django and Python. It helps users i
 ## Getting Started
 To start using this project, check the [Installation Guide](installation.md).
 
----
+## Screenshot
+![TitanBI Screenshot](https://raw.githubusercontent.com/TitanEd/documentation/master/docs/docs/images/Screenshot%20from%202025-02-19%2019-29-39.png)
