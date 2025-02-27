@@ -18,13 +18,13 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-bootstrap mkdocs-windmill
+        run: pip install mkdocs mkdocs-material mkdocs-bootstrap mkdocs-windwall
 
       - name: Build MkDocs
-        run: mkdocs build
+        run: mkdocs build -f docs/mkdocs.yml  # <-- Specify the correct path
 
       - name: Ensure CNAME file exists
-        run: echo "docs.titaned.com" > site/CNAME
+        run: echo "docs.titaned.com" > docs/site/CNAME  # <-- Adjust path
 
       - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force -f docs/mkdocs.yml  # <-- Use the correct path
