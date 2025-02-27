@@ -1,17 +1,22 @@
+/* ~/documentation/docs/stylesheets/custom.css */
 :root {
-  --md-primary-fg-color: #EB5939 !important;        /* Header and primary elements (Orange) */
-  --md-accent-fg-color: #C64A2E !important;         /* Links and accents (Darker Orange) */
-  --md-default-bg-color: #B7AB98 !important;        /* Main background (Beige) */
-  --md-default-fg-color: #EB5939 !important;        /* Text color (Orange) */
-  --md-typeset-a-color: #C64A2E !important;         /* Link color */
+  --md-primary-fg-color: #EB5939 !important;    /* Orange for header */
+  --md-accent-fg-color: #C64A2E !important;     /* Dark orange for links */
+  --md-default-bg-color: #B7AB98 !important;    /* Beige background */
+  --md-default-fg-color: #EB5939 !important;    /* Text orange */
+  --md-typeset-a-color: #C64A2E !important;     /* Link color */
 }
 
-/* Dark mode overrides */
+/* Light mode */
+body, .md-main, .md-content {
+  background-color: var(--md-default-bg-color) !important;
+  color: var(--md-default-fg-color) !important;
+}
+
+/* Dark mode */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #EB5939 !important;
-  --md-accent-fg-color: #C64A2E !important;
-  --md-default-bg-color: #2E2E2E !important;        /* Dark background */
-  --md-default-fg-color: #FFFFFF !important;        /* White text */
+  --md-default-bg-color: #2E2E2E !important;
+  --md-default-fg-color: #FFFFFF !important;
   --md-typeset-a-color: #C64A2E !important;
 }
 
@@ -22,7 +27,7 @@
 }
 
 /* Sidebar */
-.md-nav--primary, .md-sidebar {
+.md-sidebar, .md-nav {
   background-color: var(--md-default-bg-color) !important;
 }
 
@@ -32,4 +37,14 @@
 
 .md-nav__link:hover {
   color: var(--md-accent-fg-color) !important;
+}
+
+/* Links in content */
+.md-typeset a {
+  color: var(--md-typeset-a-color) !important;
+}
+
+/* Logo */
+.md-logo img, .md-logo svg {
+  fill: white !important;  /* If SVG; adjust as needed */
 }
