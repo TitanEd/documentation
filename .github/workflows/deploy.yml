@@ -1,5 +1,10 @@
 name: Deploy MkDocs
 
+on:
+  push:
+    branches:
+      - master  # Automatically trigger deployment on push to the master branch
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
