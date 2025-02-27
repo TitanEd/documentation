@@ -1,11 +1,23 @@
 site_name: "TitanEd Docs"
 theme:
-  name: "windmill"
-  palette: "dark"  # Choose "light", "dark", or "slate" for auto dark mode
+  name: "material"
+  palette:
+    - scheme: slate  # 🔥 Dark Mode
+      primary: orange  # 🟠 Primary Color
+      accent: gray  # ⚫ Secondary Color
+    - scheme: default  # 🌞 Light Mode
+      primary: orange
+      accent: gray
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate  # ✅ Enables right sidebar (Table of Contents)
   logo: "images/logo.png"
   extra_css:
-    - stylesheets/custom.css  
-  
+    - stylesheets/custom.css  # Keep this only if you still need extra styling
+
 nav:
   - Home: index.md
   - Studio:
