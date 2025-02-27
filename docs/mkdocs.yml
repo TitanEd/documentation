@@ -1,6 +1,6 @@
 site_name: "TitanEd Docs"
 theme:
-  name: windmill
+  name: cinder
   features:
     - navigation.tabs
     - navigation.instant
