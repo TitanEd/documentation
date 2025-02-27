@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material==9.5.3 mkdocs==1.5.3  # Use specific, compatible versions
 
-      - name: Build MkDocs
-        run: mkdocs build -f docs/mkdocs.yml  # Specify the correct path to mkdocs.yml in docs/ folder
+      - name: Build MkDocs with verbose output
+        run: mkdocs build -f docs/mkdocs.yml --verbose  # Adding verbose to capture detailed build logs
 
-      - name: Ensure site directory exists
+      - name: Check if site directory exists
         run: |
           if [ ! -d "site" ]; then
             echo "Error: 'site' directory not found. Build might have failed.";
