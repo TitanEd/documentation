@@ -26,7 +26,7 @@ jobs:
         run: mkdocs build -f mkdocs.yml  # Use mkdocs.yml from the root
 
       - name: Ensure CNAME file exists
-        run: echo "docs.titaned.com" > site/CNAME  # Create CNAME in site/ after build
+        run: echo "docs.titaned.com" > site/CNAME  # Ensure this runs after build
 
       - name: Check build output
         run: ls -la site/
