@@ -1,27 +1,20 @@
-/* Custom Windmill Theme - Orange & Beige */
 :root {
-  --primary-color: #EB5939 !important;  /* Orange */
-  --background-color: #B7AB98 !important; /* Beige/Gray */
-  --text-color: #EB5939 !important; /* Dark Gray */
+  /* Custom colors */
+  --md-primary-fg-color: #EB5939 !important;  /* Orange */
+  --md-accent-fg-color: #EB5939 !important;
+  --md-default-bg-color: #B7AB98 !important; /* Beige */
+  --md-text-color: #EB5939 !important;
 }
 
 /* Apply Colors */
 body {
-  background-color: var(--background-color) !important;
-  color: var(--text-color) !important;
+  background-color: var(--md-default-bg-color) !important;
+  color: var(--md-text-color) !important;
 }
 
-a {
-  color: var(--primary-color) !important;
-}
-
-a:hover {
-  color: #C64A2E !important; /* Manually darkened orange */
-}
-
-/* Header Styling */
+/* Header */
 .md-header {
-  background-color: var(--background-color) !important;
+  background-color: var(--md-primary-fg-color) !important;
 }
 
 .md-header__title {
@@ -30,7 +23,7 @@ a:hover {
 
 /* Sidebar */
 .md-sidebar {
-  background-color: var(--background-color) !important;
+  background-color: var(--md-default-bg-color) !important;
 }
 
 .md-sidebar a {
@@ -38,5 +31,5 @@ a:hover {
 }
 
 .md-sidebar a:hover {
-  color: var(--primary-color) !important;
+  color: var(--md-primary-fg-color) !important;
 }
