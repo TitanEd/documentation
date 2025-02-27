@@ -23,21 +23,13 @@ jobs:
         run: pip install mkdocs-material==9.5.3 mkdocs==1.5.3  # Use specific, compatible versions
 
       - name: Build MkDocs
-        run: mkdocs build -f mkdocs.yml  # Use mkdocs.yml from the root
+        run: mkdocs build -f docs/mkdocs.yml  # Specify the correct path to mkdocs.yml in docs/ folder
 
       - name: Ensure CNAME file exists
         run: echo "docs.titaned.com" > site/CNAME  # Ensure this runs after build
 
       - name: Check build output
         run: ls -la site/  # List contents of the site directory to confirm build output exists
-        continue-on-error: true  # Continue even if this step fails, so you can proceed to deployment
-
-      - name: Verify site build success
-        run: |
-          if [ ! -d "site" ]; then
-            echo "Error: 'site' directory not found. Build failed.";
-            exit 1;
-          fi
 
       - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force -f mkdocs.yml  # Deploy the site to GitHub Pages
+        run: mkdocs gh-deploy --force -f docs/mkdocs.yml  # Deploy using the correct path to mkdocs.yml in docs/ folder
