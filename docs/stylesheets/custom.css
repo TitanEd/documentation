@@ -1,34 +1,35 @@
 :root {
-  --md-primary-fg-color: #EB5939 !important;  /* Primary (Orange) */
-  --md-accent-fg-color: #C64A2E !important;  /* Accent (Dark Orange) */
-  --md-default-bg-color: #B7AB98 !important; /* Background (Beige) */
-  --md-text-color: #EB5939 !important;       /* Text Color */
+  --md-primary-fg-color: #EB5939 !important;        /* Header and primary elements (Orange) */
+  --md-accent-fg-color: #C64A2E !important;         /* Links and accents (Darker Orange) */
+  --md-default-bg-color: #B7AB98 !important;        /* Main background (Beige) */
+  --md-default-fg-color: #EB5939 !important;        /* Text color (Orange) */
+  --md-typeset-a-color: #C64A2E !important;         /* Link color */
 }
 
-/* Apply Colors */
-body {
-  background-color: var(--md-default-bg-color) !important;
-  color: var(--md-text-color) !important;
+/* Dark mode overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #EB5939 !important;
+  --md-accent-fg-color: #C64A2E !important;
+  --md-default-bg-color: #2E2E2E !important;        /* Dark background */
+  --md-default-fg-color: #FFFFFF !important;        /* White text */
+  --md-typeset-a-color: #C64A2E !important;
 }
 
-/* Navbar */
+/* Header */
 .md-header {
   background-color: var(--md-primary-fg-color) !important;
-}
-
-.md-header__title {
   color: white !important;
 }
 
 /* Sidebar */
-.md-sidebar {
+.md-nav--primary, .md-sidebar {
   background-color: var(--md-default-bg-color) !important;
 }
 
-.md-sidebar a {
-  color: white !important;
+.md-nav__link {
+  color: var(--md-default-fg-color) !important;
 }
 
-.md-sidebar a:hover {
-  color: var(--md-primary-fg-color) !important;
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color) !important;
 }
