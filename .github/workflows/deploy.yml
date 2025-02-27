@@ -18,7 +18,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-bootstrap mkdocs-windwall
+        run: pip install mkdocs mkdocs-material mkdocs-bootstrap mkdocs-windmill
 
       - name: Build MkDocs
         run: mkdocs build -f docs/mkdocs.yml  # <-- Specify the correct path
