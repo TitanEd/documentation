@@ -29,8 +29,15 @@ jobs:
         run: echo "docs.titaned.com" > site/CNAME  # Ensure this runs after build
 
       - name: Check build output
-        run: ls -la site/
-        if: success() || failure()  # Log the site directory contents for debugging
+        run: ls -la site/  # List contents of the site directory to confirm build output exists
+        continue-on-error: true  # Continue even if this step fails, so you can proceed to deployment
+
+      - name: Verify site build success
+        run: |
+          if [ ! -d "site" ]; then
+            echo "Error: 'site' directory not found. Build failed.";
+            exit 1;
+          fi
 
       - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force -f mkdocs.yml  # Use mkdocs.yml from the root
+        run: mkdocs gh-deploy --force -f mkdocs.yml  # Deploy the site to GitHub Pages
