@@ -1,11 +1,28 @@
 site_name: "TitanEd Docs"
 theme:
-  name: bootstrap
-  navigation_depth: 2
-  nav_style: both  # May require custom CSS
+  name: windmill
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: "#EB5939"  # Orange
+      accent: "#C64A2E"   # Darker Orange
+      background: "#B7AB98"  # Beige
+      text: "#EB5939"  # Text color
+    - scheme: slate  # Dark Mode
+      primary: "#EB5939"
+      accent: "#C64A2E"
+      background: "#2E2E2E"  # Dark background
+      text: "#FFFFFF"  # White text for dark mode
 
 extra_css:
-  - stylesheets/custom.css
+  - stylesheets/custom.css 
 
 nav:
   - Home: index.md
