@@ -3,7 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - master  # Automatically trigger deployment on push to the master branch
+      - master
 
 jobs:
   deploy:
@@ -15,7 +15,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install mkdocs-material==9.5.3 mkdocs==1.5.3
+        run: pip install mkdocs-material
 
       - name: Build MkDocs
         run: |
