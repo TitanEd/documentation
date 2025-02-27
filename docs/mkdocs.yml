@@ -1,6 +1,6 @@
 site_name: "TitanEd Docs"
 theme:
-  name: cinder
+  name: material
   features:
     - navigation.tabs
     - navigation.instant
