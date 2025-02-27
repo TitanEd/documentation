@@ -1,35 +1,46 @@
 :root {
-  /* Custom colors */
-  --md-primary-fg-color: #EB5939 !important;  /* Orange */
-  --md-accent-fg-color: #EB5939 !important;
-  --md-default-bg-color: #B7AB98 !important; /* Beige */
-  --md-text-color: #EB5939 !important;
+  --primary-color: #EB5939 !important;
+  --accent-color: #C64A2E !important;
+  --background-color: #B7AB98 !important;
+  --text-color: #EB5939 !important;
 }
 
-/* Apply Colors */
+/* Body */
 body {
-  background-color: var(--md-default-bg-color) !important;
-  color: var(--md-text-color) !important;
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
 }
 
-/* Header */
-.md-header {
-  background-color: var(--md-primary-fg-color) !important;
+/* Navbar */
+.navbar.navbar-expand-md {
+  background-color: var(--primary-color) !important;
 }
 
-.md-header__title {
+.navbar a {
   color: white !important;
+}
+
+.navbar a:hover {
+  color: var(--accent-color) !important;
 }
 
 /* Sidebar */
-.md-sidebar {
-  background-color: var(--md-default-bg-color) !important;
+.bd-sidebar {
+  background-color: var(--background-color) !important;
 }
 
-.md-sidebar a {
+.bd-sidebar a {
   color: white !important;
 }
 
-.md-sidebar a:hover {
-  color: var(--md-primary-fg-color) !important;
+.bd-sidebar a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  text-align: center;
+  padding: 10px;
 }
