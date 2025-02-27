@@ -25,8 +25,15 @@ jobs:
       - name: Build MkDocs
         run: mkdocs build -f docs/mkdocs.yml  # Specify the correct path to mkdocs.yml in docs/ folder
 
+      - name: Ensure site directory exists
+        run: |
+          if [ ! -d "site" ]; then
+            echo "Error: 'site' directory not found. Build might have failed.";
+            exit 1;
+          fi
+
       - name: Ensure CNAME file exists
-        run: echo "docs.titaned.com" > site/CNAME  # Ensure this runs after build
+        run: echo "docs.titaned.com" > site/CNAME  # Ensure this runs after the build completes successfully
 
       - name: Check build output
         run: ls -la site/  # List contents of the site directory to confirm build output exists
