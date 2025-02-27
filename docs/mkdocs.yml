@@ -1,10 +1,17 @@
 site_name: "TitanEd Docs"
 theme:
-  name: "material"
-  palette: "dark"  # Enable dark mode support
+  name: material
   logo: "images/logo.png"
-  extra_css:
-    - stylesheets/custom.css 
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+    - scheme: slate
+      primary: custom
+      accent: custom
+extra_css:
+  - stylesheets/custom.css
 
 nav:
   - Home: index.md
