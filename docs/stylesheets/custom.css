@@ -1,20 +1,42 @@
-/* Custom Material Theme - Orange & Gray */
+/* Custom Windmill Theme - Orange & Beige */
 :root {
-  --md-primary-fg-color: #ff6b00;  /* Orange */
-  --md-accent-fg-color: #606060;  /* Gray */
-  --md-default-bg-color: #121212; /* Dark Mode Background */
-  --md-typeset-color: #eeeeee;  /* Light Text for Dark Mode */
+  --primary-color: #EB5939;  /* Orange */
+  --background-color: #B7AB98; /* Beige/Gray */
+  --text-color: #EB5939; /* Dark Gray */
+}
+
+/* Apply Colors */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+}
+
+/* Header Styling */
+.md-header {
+  background-color: var(--background-color);
+}
+
+.md-header__title {
+  color: white;
 }
 
 /* Sidebar */
 .md-sidebar {
-  background-color: var(--md-accent-fg-color);
+  background-color: var(--background-color);
 }
 
-.md-sidebar__inner a {
+.md-sidebar a {
   color: white;
 }
 
-.md-sidebar__inner a:hover {
-  color: var(--md-primary-fg-color);
+.md-sidebar a:hover {
+  color: var(--primary-color);
 }
