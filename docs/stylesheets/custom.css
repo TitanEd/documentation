@@ -1,46 +1,34 @@
 :root {
-  --primary-color: #EB5939 !important;
-  --accent-color: #C64A2E !important;
-  --background-color: #B7AB98 !important;
-  --text-color: #EB5939 !important;
+  --md-primary-fg-color: #EB5939 !important;  /* Primary (Orange) */
+  --md-accent-fg-color: #C64A2E !important;  /* Accent (Dark Orange) */
+  --md-default-bg-color: #B7AB98 !important; /* Background (Beige) */
+  --md-text-color: #EB5939 !important;       /* Text Color */
 }
 
-/* Body */
+/* Apply Colors */
 body {
-  background-color: var(--background-color) !important;
-  color: var(--text-color) !important;
+  background-color: var(--md-default-bg-color) !important;
+  color: var(--md-text-color) !important;
 }
 
 /* Navbar */
-.navbar.navbar-expand-md {
-  background-color: var(--primary-color) !important;
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
 }
 
-.navbar a {
+.md-header__title {
   color: white !important;
-}
-
-.navbar a:hover {
-  color: var(--accent-color) !important;
 }
 
 /* Sidebar */
-.bd-sidebar {
-  background-color: var(--background-color) !important;
+.md-sidebar {
+  background-color: var(--md-default-bg-color) !important;
 }
 
-.bd-sidebar a {
+.md-sidebar a {
   color: white !important;
 }
 
-.bd-sidebar a:hover {
-  color: var(--primary-color) !important;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--primary-color) !important;
-  color: white !important;
-  text-align: center;
-  padding: 10px;
+.md-sidebar a:hover {
+  color: var(--md-primary-fg-color) !important;
 }
