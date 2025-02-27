@@ -5,6 +5,8 @@ theme:
 
 nav:
   - Home: index.md
+  - Studio:
+      - Overview: Studio/studio.md
   - Introduction: introduction.md
   - Installation: installation.md
   - Configuration: configuration.md
