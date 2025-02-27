@@ -1,16 +1,22 @@
 site_name: "TitanEd Docs"
 theme:
-  name: material
-  logo: "images/logo.png"
+  name: bootstrap
+  navigation_depth: 2
+  nav_style: both  # Enables both-side navigation
   palette:
     - scheme: default
-      primary: custom
-      accent: custom
-    - scheme: slate
-      primary: custom
-      accent: custom
+      primary: "#EB5939"  # Orange
+      accent: "#C64A2E"   # Darker Orange
+      background: "#B7AB98"  # Beige/Gray
+      text: "#EB5939"  # Text color
+    - scheme: slate  # Enables Dark Mode
+      primary: "#EB5939"
+      accent: "#C64A2E"
+      background: "#2E2E2E"  # Dark mode background
+      text: "#FFFFFF"  # White text for dark mode
+
 extra_css:
-  - stylesheets/custom.css
+  - docs/stylesheets/custom.css  # Ensure correct path
 
 nav:
   - Home: index.md
