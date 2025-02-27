@@ -1,42 +1,34 @@
 name: Deploy MkDocs
 
-on:
-  push:
-    branches:
-      - master
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Fetch all history for a clean checkout
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'  # Updated to a more recent version for compatibility
+          python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install mkdocs-material==9.5.3 mkdocs==1.5.3  # Use specific, compatible versions
+        run: pip install mkdocs-material==9.5.3 mkdocs==1.5.3
 
-      - name: Build MkDocs with verbose output
-        run: mkdocs build -f docs/mkdocs.yml --verbose  # Adding verbose to capture detailed build logs
-
-      - name: Check if site directory exists
+      - name: Build MkDocs
         run: |
-          if [ ! -d "site" ]; then
-            echo "Error: 'site' directory not found. Build might have failed.";
-            exit 1;
-          fi
+          cd docs
+          mkdocs build -f mkdocs.yml
 
       - name: Ensure CNAME file exists
-        run: echo "docs.titaned.com" > site/CNAME  # Ensure this runs after the build completes successfully
+        run: |
+          cd docs
+          echo "docs.titaned.com" > site/CNAME
+          echo "docs.titaned.com" > docs/site/CNAME
 
       - name: Check build output
-        run: ls -la site/  # List contents of the site directory to confirm build output exists
+        run: |
+          cd docs
+          ls -la site/
 
       - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force -f docs/mkdocs.yml  # Deploy using the correct path to mkdocs.yml in docs/ folder
+        run: |
+          cd docs
+          mkdocs gh-deploy --force -f mkdocs.yml
