@@ -1,6 +1,6 @@
 site_name: "TitanEd Docs"
 theme:
-  name: "windmill"
+  name: "material"
   palette: "dark"  # Enable dark mode support
   logo: "images/logo.png"
   extra_css:
