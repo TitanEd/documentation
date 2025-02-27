@@ -1,42 +1,42 @@
 /* Custom Windmill Theme - Orange & Beige */
 :root {
-  --primary-color: #EB5939;  /* Orange */
-  --background-color: #B7AB98; /* Beige/Gray */
-  --text-color: #EB5939; /* Dark Gray */
+  --primary-color: #EB5939 !important;  /* Orange */
+  --background-color: #B7AB98 !important; /* Beige/Gray */
+  --text-color: #EB5939 !important; /* Dark Gray */
 }
 
 /* Apply Colors */
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 a:hover {
-  color: darken(var(--primary-color), 10%);
+  color: #C64A2E !important; /* Manually darkened orange */
 }
 
 /* Header Styling */
 .md-header {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 .md-header__title {
-  color: white;
+  color: white !important;
 }
 
 /* Sidebar */
 .md-sidebar {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 .md-sidebar a {
-  color: white;
+  color: white !important;
 }
 
 .md-sidebar a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
