@@ -1,0 +1,58 @@
+:root {
+  --md-primary-fg-color: #2C2C2C !important;
+  --md-accent-fg-color: #EB5939 !important;
+  --md-default-bg-color: #2C2C2C !important;
+  --md-default-fg-color: #EB5939 !important;
+  --md-typeset-a-color: #EB5939 !important;
+}
+
+body {
+  color: #2C2C2C !important;
+}
+
+.md-header {
+  color: #EB5939 !important;
+}
+
+.md-tabs__link {
+  color: #B7AB98 !important;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 22px;
+}
+
+.md-tabs__link:hover {
+  color: #EB5939 !important;
+  text-decoration: underline;
+}
+
+.md-typeset a {
+  color: #2C2C2C !important;
+}
+
+.md-logo img, .md-logo svg {
+  fill: #EB5939 !important;
+}
+
+.md-footer {
+  background-color: #2C2C2C !important;
+  color: #EB5939 !important;
+  padding: 20px;
+  text-align: center;
+}
+
+.md-footer-meta {
+  font-size: 14px;
+  color: #EB5939 !important;
+}
+
+.md-footer .md-copyright a {
+  color: #EB5939 !important;
+  text-decoration: none;
+}
+
+.md-footer .md-copyright a:hover {
+  color: #ff4081 !important;
+  text-decoration: underline;
+}
+

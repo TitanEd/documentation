@@ -1,19 +1,35 @@
 site_name: "TitanEd Docs"
 theme:
   name: material
-  features: [navigation.tabs, navigation.instant, navigation.tracking, navigation.expand, search.highlight, search.share, toc.integrate]
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - toc.integrate
   palette:
-    - scheme: default
-    - scheme: slate
+    primary: "#2C2C2C"  # Custom primary color (dark gray)
+    accent: "#EB5939"   # Custom accent color (orange)
   logo: images/logo.png
+
 extra_css:
   - stylesheets/custom.css
+
 nav:
   - Home: index.md
+  - TitanBi:
+      - TitanBI Key Benefits: TitanBi/TitanBi.md
+      - Course DashBoard: TitanBi/TitanBi_CourseDashBoard.md
+      - Individual Learner Dashboard: TitanBi/TitanBi_Individual_Dashboard.md
+      - At-Risk Learner Dashboard: TitanBi/TitanBI_AtRisk_Dashboard  
   - Studio:
-      - Overview: Studio/studio.md
-  - Introduction: introduction.md
-  - Installation: installation.md
-  - Configuration: configuration.md
-  - API Reference: api.md
-  - FAQ: faq.md
+      - Course Guidelines: Studio/Course-Guidelines.md
+      - Creating a Course: Studio/Create-Course.md
+      - Content Development Guide: Studio/Course-Content-Development-Guide.md
+      - Course Section Guide: Studio/what-is-Section.md
+      - Course Subsection Guide: Studio/Subsection.md
+      - Course Unit Guide: Studio/Course_Unit.md
+
+  - About Us: About Us.md
