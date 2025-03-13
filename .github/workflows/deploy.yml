@@ -3,12 +3,16 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - master
+      - master  # Change this to the branch you're deploying from (e.g., main or master)
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -19,21 +23,16 @@ jobs:
 
       - name: Build MkDocs
         run: |
-          cd docs
-          mkdocs build -f mkdocs.yml
+          mkdocs build -f mkdocs.yml  # No need to cd into docs if mkdocs.yml is in the root
 
       - name: Ensure CNAME file exists
         run: |
-          cd docs
-          echo "docs.titaned.com" > site/CNAME
-          echo "docs.titaned.com" > docs/site/CNAME
+          echo "docs.titaned.com" > site/CNAME  # Place CNAME file in the generated site/ folder
 
       - name: Check build output
         run: |
-          cd docs
-          ls -la site/
+          ls -la site/  # List contents of the site directory to verify the build output
 
       - name: Deploy MkDocs
         run: |
-          cd docs
-          mkdocs gh-deploy --force -f mkdocs.yml
+          mkdocs gh-deploy --force -f mkdocs.yml  # Deploy the site to GitHub Pages
