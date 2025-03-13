@@ -11,7 +11,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
+      - name: Debug - List directory contents
+        run: |
+          pwd  # Print working directory
+          ls -la  # List all files in the root directory
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -19,7 +24,8 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: |
+          pip install mkdocs mkdocs-material
 
       - name: Build MkDocs
         run: |
