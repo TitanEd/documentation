@@ -1,4 +1,6 @@
 site_name: "TitanEd Docs"
+extra_files:
+  - CNAME
 theme:
   name: material
   features:
