@@ -26,11 +26,8 @@ jobs:
           mkdocs build
 
       - name: Ensure CNAME file exists
-        run: |
-          cd docs
-          echo "docs.titaned.com" > site/CNAME
+        run: echo "docs.titaned.com" > docs/site/CNAME
 
       - name: Deploy MkDocs
         run: |
-          cd docs
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force --no-history
