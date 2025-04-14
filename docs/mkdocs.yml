@@ -21,7 +21,7 @@ extra_css:
 
 nav:
   - Home: index.md
-  - TitanBi:
+  - TitanBI:
       - TitanBI Key Benefits: TitanBi/TitanBi.md
       - Course DashBoard: TitanBi/TitanBi_CourseDashBoard.md
       - Individual Learner Dashboard: TitanBi/TitanBi_Individual_Dashboard.md
