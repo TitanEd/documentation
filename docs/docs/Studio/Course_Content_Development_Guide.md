@@ -54,3 +54,4 @@ You can always revise your content as your course evolves:
 ---
 
 > **Pro Tip:** Regularly test your content to ensure it works well on both desktop and mobile apps.
+

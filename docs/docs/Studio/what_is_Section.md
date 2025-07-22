@@ -59,6 +59,41 @@ To set a section release date:
 
 ![](../images/set_release_date.png)
 
+Set a release date and time to control when a section becomes available to learners.
+
+1. In the section box, click the **Settings**menu and choose **Configure**.
+
+   ![Section settings icon highlighted](../images/course_s4.png)
+
+2. The **Settings** window will appear.
+3. Input the desired release date and time for the section.
+
+   > **Note**: Times are set in Coordinated Universal Time (UTC). Use a tool like [Time Zone Converter](https://www.timeanddate.com/worldclock/converter.html) to confirm the correct local time.
+
+4. Click **Save** to apply.
+
+## Hide a Section from Learners
+Conceal an entire section, including its subsections and units, from learners, regardless of their individual settings.
+
+For more information, see [Content Visibility](#).
+
+To hide a section:
+
+1. In the section box, select **Configure** from the **Settings** menu.
+
+   ![Section settings icon highlighted](../images/course_s6.png)
+
+2. The **Settings** window opens.
+3. Under **Visibility Settings**, check **Hide from learners**.
+4. Click **Save**.
+
+The section is now invisible to learners.
+
+To reveal the section, repeat these steps and uncheck **Hide from learners**.
+
+> **Warning**: Making a section visible doesn’t automatically show all its content. Subsections or units explicitly set to hidden, unpublished units, or unshared changes remain inaccessible to learners.
+
+
 ## Set Section Highlights for Highlight Emails
 
 If enabled by the system administrator, highlights of course content can be sent to learners via email. To set highlights:
@@ -87,19 +122,34 @@ To publish all new and changed units in a section, click the "Publish" icon in t
  ![](../images/publish.png)
 
 
-## Hide a Section from Learners
-
-To hide a section from learners:
-- Select the "Configure" icon in the section box.
-- In the settings, choose "Hide from learners."
-- Save the changes.
-
-To make it visible again, repeat these steps and deselect "Hide from learners."
-
----
-
-For more detailed information, you can explore other sections of the course documentation.
-
 <br><br>
 
-![](../images/Content_Outline.png)
+   ![Publish icon for a section](../images/course_s5.png)
+
+## Duplicate a Section
+Create a copy of a section, including its subsections and units, to reuse or modify content.
+
+1. In the section box, click the **Settings** menu and select **Duplicate**.
+
+
+2. A new section appears below the original with the same content and settings, typically labeled with a suffix (e.g., "Copy of Section Name").
+
+3. Edit the duplicated section as needed (e.g., rename or modify content).
+
+> **Tip**: Duplicating is useful for reusing similar content across weeks or modules without starting from scratch.
+
+## Move a Section Up or Down
+Reorder sections to adjust the course flow.
+
+1. In the section box, click the **Settings** menu.
+2. Select **Move Up** to shift the section one position higher in the course outline, or **Move Down** to shift it one position lower.
+
+
+   > **Note**: The **Move Up** or **Move Down** options are disabled if the section is already at the top or bottom of the course outline.
+
+
+## Delete a Section
+Remove a section and all its subsections and units permanently.
+
+> **Warning**: Deleting a section is irreversible. Confirm you no longer need its content before proceeding.
+
