@@ -1,4 +1,6 @@
 site_name: "TitanEd Docs"
+extra_files:
+  - CNAME
 theme:
   name: material
   features:
@@ -19,14 +21,12 @@ extra_css:
 
 nav:
   - Home: index.md
-  - TitanAi:
-      - TitanAI Key Benefits: TitanAi/TitanAi.md
-  - TitanBi:
+  - TitanBI:
       - TitanBI Key Benefits: TitanBi/TitanBi.md
       - Course DashBoard: TitanBi/TitanBi_CourseDashBoard.md
       - Individual Learner Dashboard: TitanBi/TitanBi_Individual_Dashboard.md
       - At-Risk Learner Dashboard: TitanBi/TitanBI_AtRisk_Dashboard.md
-      - Instructor Dashboard(LMS): TitanBi/TitanBI_Instructor_LMS.md
+      - Instructor Dashboard (LMS): TitanBi/TitanBI_Instructor_LMS.md
   - Studio:
       - What Is Studio: Studio/What_Is_Studio.md
       - Course Guidelines: Studio/Course_Guidelines.md
@@ -40,5 +40,4 @@ nav:
       - Add and Manage Course Files: Studio/Add_and_Manage_Course_Files.md
       - Set Up Grading: Studio/Set_Up_Grading.md
       - Managing Course Team: Studio/Managing_Course_Team_Members.md
-
   - About Us: About Us.md
