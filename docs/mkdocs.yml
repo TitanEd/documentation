@@ -25,13 +25,19 @@ nav:
       - TitanBI Key Benefits: TitanBi/TitanBi.md
       - Course DashBoard: TitanBi/TitanBi_CourseDashBoard.md
       - Individual Learner Dashboard: TitanBi/TitanBi_Individual_Dashboard.md
-      - At-Risk Learner Dashboard: TitanBi/TitanBI_AtRisk_Dashboard  
+      - At-Risk Learner Dashboard: TitanBi/TitanBI_AtRisk_Dashboard.md
+      - Instructor Dashboard (LMS): TitanBi/TitanBI_Instructor_LMS.md
   - Studio:
-      - Course Guidelines: Studio/Course-Guidelines.md
-      - Creating a Course: Studio/Create-Course.md
-      - Content Development Guide: Studio/Course-Content-Development-Guide.md
-      - Course Section Guide: Studio/what-is-Section.md
+      - What Is Studio: Studio/What_Is_Studio.md
+      - Course Guidelines: Studio/Course_Guidelines.md
+      - Content Development Guide: Studio/Course_Content_Development_Guide.md
+      - Creating a Course: Studio/Create_Course.md
+      - Course Section Guide: Studio/what_is_Section.md
       - Course Subsection Guide: Studio/Subsection.md
       - Course Unit Guide: Studio/Course_Unit.md
-
+      - Guide to Creating Engaging Course Content in Studio: Studio/Guide_to_Creating_Engaging_Course_Content_in_Studio.md
+      - Managing Course Updates and Handouts: Studio/Managing_Course_Updates_and_Handouts.md
+      - Add and Manage Course Files: Studio/Add_and_Manage_Course_Files.md
+      - Set Up Grading: Studio/Set_Up_Grading.md
+      - Managing Course Team: Studio/Managing_Course_Team_Members.md
   - About Us: About Us.md

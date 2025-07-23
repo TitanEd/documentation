@@ -4,6 +4,7 @@ A unit is a part of a subsection that learners view as a single page.
 
 A unit contains one or more components, such as text with HTML markup, problems, a discussion, or a video.
 
+
 ### Viewing Units in the Outline
 The course outline page does not show components. You add or access components by selecting the units that contain the components.
 
@@ -37,6 +38,9 @@ As a course author, you work with units that have the following statuses:
 - Published (Not Yet Released)
 - Draft (Unpublished Changes)
 - Visible to Staff Only
+
+![Unit Example](../images/unit1.png)
+
 
 ### Create a Unit
 To create a unit:

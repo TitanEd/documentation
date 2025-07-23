@@ -51,6 +51,9 @@ To set the release date for a subsection:
 2. Under **Release Date and Time**, enter the desired release date (in UTC).
 3. Click **Save**.
 
+![Subsection2 Example](../images/course_s7.png)
+
+
 ---
 
 ## Set the Assignment Type and Due Date for a Subsection
@@ -72,6 +75,21 @@ To control when problem results are shown to learners:
    - **Never show results**: Results are hidden for everyone.
    - **Show results when subsection is past due**: Results are hidden until the due date.
 
+![Subsection2 Example](../images/course_s8.png)
+
+### Advanced
+Set the subsection as a special exam, such as a timed exam.
+
+![Subsection2 Example](../images/course_s9.png)
+
+- In the **Advanced** tab, under **Set as a Special Exam**, select:
+  - **None**: No special exam settings.
+  - **Timed**: Limits the time learners can spend on problems. Learners must submit answers before the time expires.
+
+   > **Tip**: For timed exams, you can grant extra time to individual learners via the Instructor Dashboard.
+
+
+3. Click **Save** to apply changes.
 
 ---
 
@@ -95,6 +113,7 @@ You can hide a subsection in two ways:
    - **Hide Content After Date**: Makes content unavailable after a certain date.
 3. Click **Save**.
 
+
 ---
 
 ## Delete a Subsection
@@ -104,4 +123,5 @@ To delete a subsection:
 2. Confirm by selecting **Yes, delete this subsection**.
 
 > **Warning**: This action cannot be undone.
+
 
