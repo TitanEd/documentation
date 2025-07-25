@@ -65,10 +65,14 @@ nav:
       - Wiki Overview: LMS/Wiki_Overview.md
       - Learners Activity In lms: LMS/What_Learners_Can_Do_overview.md
   - LMS(Administration):
-      - LMS_Administration_Overview: LMS_ADMIN/LMS_Administration_Overview.md
       - Instructor Course Overview: LMS_ADMIN/Instructor_Course_Overview.md
       - Instructor Tab: LMS_ADMIN/Instructor_tab.md
       - membership: LMS_ADMIN/membership.md
       - Cohorts: LMS_ADMIN/Cohorts.md
       - Extensions: LMS_ADMIN/Extensions.md
+      - Student Admin: LMS_ADMIN/Student_Admin.md
+      - Data Download: LMS_ADMIN/Data_Download.md
+      - Special Exam Allowance: LMS_ADMIN/Special_Exam_Allowance.md
+      - Certificates Management: LMS_ADMIN/Certificates_Management.md
+      - LMS Administration Overview: LMS_ADMIN/LMS_Administration_Overview.md
   - About Us: About Us.md
