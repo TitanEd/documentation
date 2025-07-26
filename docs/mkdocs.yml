@@ -37,7 +37,42 @@ nav:
       - Course Unit Guide: Studio/Course_Unit.md
       - Guide to Creating Engaging Course Content in Studio: Studio/Guide_to_Creating_Engaging_Course_Content_in_Studio.md
       - Managing Course Updates and Handouts: Studio/Managing_Course_Updates_and_Handouts.md
+      - Pages & Resources: Studio/Page_and_Resources.md
       - Add and Manage Course Files: Studio/Add_and_Manage_Course_Files.md
       - Set Up Grading: Studio/Set_Up_Grading.md
       - Managing Course Team: Studio/Managing_Course_Team_Members.md
+      - Group Configuration: Studio/Group_Configuration.md
+      - Advanced Settings in Studio: Studio/Advanced_Settings_in_Studio.md
+      - Adding a Certificate: Studio/Adding_a_Certificate.md
+      - Course Import in Studio: Studio/Course_Import_in_Studio.md
+      - Course Export in Studio: Studio/Course_Export_in_Studio.md
+      - Course Export Tag Overview: Studio/Course_Export_Tag_Overview.md
+      - Course Launch Checklist: Studio/Best_Practices_Checklist for_Course.md
+      - Create New Library: Studio/Create_New_Library.md
+      - Taxonomies: Studio/Taxonomies.md
+
+  - LMS(Learner Experience):
+      - LMS Home Page Overview – TitanEd: LMS/lms_home_page_overview.md
+      - Sign UP and Sign In: LMS/Signup_and_Signin.md
+      - Dashboard and Account Overview: LMS/Dashboard_and_Account.md
+      - Enrolling in Course and Prerequisites: LMS/Enrolling_in_ Course_and_Prerequisites.md
+      - Starting a Course: LMS/Starting_a_Course.md
+      - Progress Page Learner Guide: LMS/Progress_Page_Learner_Guide.md
+      - Dates Tab Learner Guide: LMS/Dates_Tab_Learner_Guide.md
+      - Discussions Learner Guide: LMS/Discussions.md
+      - Live Tab Overview: LMS/Live_Tab_Overview.md
+      - Taking Notes: LMS/Taking_Notes.md
+      - Wiki Overview: LMS/Wiki_Overview.md
+      - Learners Activity In lms: LMS/What_Learners_Can_Do_overview.md
+  - LMS(Administration):
+      - Instructor Course Overview: LMS_ADMIN/Instructor_Course_Overview.md
+      - Instructor Tab: LMS_ADMIN/Instructor_tab.md
+      - membership: LMS_ADMIN/membership.md
+      - Cohorts: LMS_ADMIN/Cohorts.md
+      - Extensions: LMS_ADMIN/Extensions.md
+      - Student Admin: LMS_ADMIN/Student_Admin.md
+      - Data Download: LMS_ADMIN/Data_Download.md
+      - Special Exam Allowance: LMS_ADMIN/Special_Exam_Allowance.md
+      - Certificates Management: LMS_ADMIN/Certificates_Management.md
+      - LMS Administration Overview: LMS_ADMIN/LMS_Administration_Overview.md
   - About Us: About Us.md
