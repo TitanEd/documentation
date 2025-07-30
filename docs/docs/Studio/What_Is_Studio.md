@@ -4,7 +4,8 @@
 Studio is a powerful, web-based tool designed for educators to create, manage, and deliver online courses. Accessible directly through your browser, Studio requires no additional software, making it easy to build and customize courses from anywhere.
 
 ## Key Features of Studio
-With Studio, you can:
+
+
 - **Build Course Structure**: Organize your course into sections, subsections, and units to create a clear learning path.
 - **Add Content**: Incorporate diverse resources such as videos, text, multiple-choice questions, and interactive problems to engage learners.
 - **Manage Course Settings**:
