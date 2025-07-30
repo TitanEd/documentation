@@ -66,6 +66,7 @@ nav:
       - Learners Activity In lms: LMS/What_Learners_Can_Do_overview.md
   - LMS(Administration):
       - Instructor Course Overview: LMS_ADMIN/Instructor_Course_Overview.md
+      - Sign UP and Sign In: LMS/Signup_and_Signin.md
       - Instructor Tab: LMS_ADMIN/Instructor_tab.md
       - membership: LMS_ADMIN/membership.md
       - Cohorts: LMS_ADMIN/Cohorts.md
@@ -76,5 +77,16 @@ nav:
       - Certificates Management: LMS_ADMIN/Certificates_Management.md
       - Open Response Assessments: LMS_ADMIN/Open_Response_Assessments.md
       - Accessing Reports: LMS_ADMIN/Accessing_Reports.md
+      - Course Creator vs Admin: LMS_ADMIN/Course_Creator_and_Admin.md
       - LMS Administration Overview: LMS_ADMIN/LMS_Administration_Overview.md
+  - Control Hub:
+      - Control Hub Overview: Control_Hub/Control_Hub_Overview.md
+      - Control Hub Dashboard: Control_Hub/dashboard.md
+      - Configuration Guide: Control_Hub/Configuration_Guide.md
+      # - Manage Institutions: Control_Hub/Manage_Institutions.md
+      - User Management: Control_Hub/User_Management.md
+      - Course Management: Control_Hub/Course_Management.md
+      - Add on Configuration(Page,Blogs): Control_Hub/Add_on_ Configuration.md
+      - Analytics Overview: Control_Hub/Analytics_Overview.md
+      - Billing and Subscription: Control_Hub/Billing_Subscription.md
   - About Us: About Us.md
