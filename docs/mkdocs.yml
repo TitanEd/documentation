@@ -10,15 +10,34 @@ theme:
     - navigation.expand
     - search.highlight
     - search.share
-    - toc.integrate
+    - search.suggest
+    - toc.integrate  # Integrates TOC into the content (disables right sidebar TOC)
   palette:
-    primary: "#2C2C2C"  # Custom primary color (dark gray)
-    accent: "#EB5939"   # Custom accent color (orange)
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black  # Use black to align with CSS
+      accent: grey    # Use grey for consistency
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black  # Use black to ensure header and tabs are black
+      accent: grey    # Use grey for consistency
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
   logo: images/logo.png
 
 extra_css:
   - stylesheets/custom.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
+extra_javascript:
+  - https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js
+
+plugins:
+  - search
 nav:
   - Home: index.md
   - TitanBI:
@@ -83,10 +102,11 @@ nav:
       - Control Hub Overview: Control_Hub/Control_Hub_Overview.md
       - Control Hub Dashboard: Control_Hub/dashboard.md
       - Configuration Guide: Control_Hub/Configuration_Guide.md
-      # - Manage Institutions: Control_Hub/Manage_Institutions.md
+      - Manage Institutions: Control_Hub/Manage_Institutions.md
       - User Management: Control_Hub/User_Management.md
       - Course Management: Control_Hub/Course_Management.md
       - Add on Configuration(Page,Blogs): Control_Hub/Add_on_ Configuration.md
       - Analytics Overview: Control_Hub/Analytics_Overview.md
       - Billing and Subscription: Control_Hub/Billing_Subscription.md
+  - FAQ: faq.md    
   - About Us: About Us.md
