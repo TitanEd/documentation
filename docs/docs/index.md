@@ -666,7 +666,7 @@ hide:
 
 <div class="titaned-tile-grid">
   <div class="titaned-tile">
-    <a href="/TitanBi/TitanBi">
+    <a href="/documentation/TitanBi/TitanBi.html">
       <div class="titaned-tile__icon">
         <img src="homepage_images/titanbi.png" alt="TitanBI Analytics">
       </div>
@@ -677,7 +677,7 @@ hide:
     </a>
   </div>
   <div class="titaned-tile">
-    <a href="/Studio/What_Is_Studio">
+    <a href="/documentation/Studio/What_Is_Studio">
       <div class="titaned-tile__icon">
         <img src="homepage_images/studio.png" alt="Studio Course Creation">
       </div>
@@ -688,7 +688,7 @@ hide:
     </a>
   </div>
   <div class="titaned-tile">
-    <a href="/LMS/lms_home_page_overview">
+    <a href="/documentation/LMS/lms_home_page_overview">
       <div class="titaned-tile__icon">
         <img src="homepage_images/learner.png" alt="LMS Learner">
       </div>
@@ -699,7 +699,7 @@ hide:
     </a>
   </div>
   <div class="titaned-tile">
-    <a href="/LMS_ADMIN/LMS_Administration_Overview">
+    <a href="/documentation/LMS_ADMIN/LMS_Administration_Overview">
       <div class="titaned-tile__icon">
         <img src="homepage_images/admin.png" alt="LMS Admin">
       </div>
@@ -710,7 +710,7 @@ hide:
     </a>
   </div>
   <div class="titaned-tile">
-    <a href="faq">
+    <a href="documentation/faq">
       <div class="titaned-tile__icon">
         <img src="homepage_images/controlhub.png" alt="LMS Admin">
       </div>
@@ -721,7 +721,7 @@ hide:
     </a>
   </div>
   <div class="titaned-tile">
-    <a href="faq">
+    <a href="documentation/faq">
       <div class="titaned-tile__icon">
         <img src="homepage_images/faqs-icon.png" alt="LMS Admin">
       </div>
