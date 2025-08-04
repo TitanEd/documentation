@@ -5,10 +5,10 @@ hide:
   - toc
 ---
 
-# TitanEd Docs
+<!-- ### TitanEd Docs -->
 
 <div class="titaned-commerce-message">
-  <strong>Your Learning, Our Technology — TitanEd LMS Suite</strong><br>
+  <strong> Your Learning, Our Technology — TitanEd LMS Suite</strong><br>
   Launch your LMS instantly with TELS — a secure, subscription-based, AI-driven learning experience platform designed for educators, institutions, and businesses of all sizes. </br></br>
 
   <a href="https://titaned.com/get-started/">Start today with a free trial</a>
@@ -28,31 +28,47 @@ hide:
   padding: 0;
 }
 
+.md-typeset h1{
+  display:none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.md-typeset{
+  padding: 0;
+}
+.titaned-commerce-message{
+  margin-top:0;
+  padding-top:0;
+}
 /* Commerce Message: Styles the promotional text above the search bar */
 .titaned-commerce-message {
   text-align: center;
-  padding: 24px 16px;
-  margin: 32px auto 24px;
+  padding: 0 16px 0 16px;
+  margin: 0 auto 0;
   max-width: 900px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   font-family: 'Syne', sans-serif;
-  background: #B7AB98; /* Primary color */
+  background: none; /* Primary color */
   color: #2C2C2C; /* Secondary color */
-  line-height: 1.5;
+  line-height: 1.1;
 }
 
 .titaned-commerce-message strong {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 .titaned-commerce-message a {
+  font-size: 24px;
   color: #EB5939; /* Highlight color */
   text-decoration: none;
   font-weight: 600;
+  margin:0;
+  padding:0;
 }
 
 .titaned-commerce-message a:hover {
@@ -63,31 +79,43 @@ hide:
 /* Search Block: Container for isolating search styling */
 .search-block {
   max-width: 900px;
-  margin: 0 auto 100px;
-  padding: 0 16px;
+  display: flex;
+  align-item: center;
+  justify-contant: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.md-header{
+  background-color: #2C2C2C;
+}
+
+.md-header__inner > .md-header__button > img {
+  width: 152px;
+  height: 68px;
 }
 
 /* Search Bar: Styled within the search block with custom height and red accent */
-.search-block .titaned-search-bar {
-  position: relative;
+.titaned-search-bar {
   display: flex;
   align-items: center;
-  z-index: 30;
+  width: 100%;
+  margin: 16px auto 0;
+  z-index: -1000;
 }
-
 .search-block .titaned-search-bar input {
   width: 100%;
   height: 60px;
   padding: 20px 20px 20px 60px;
-  font-size: 18px;
   font-family: 'Roboto', sans-serif;
   border: 2px solid #ff0000;
+  outline: none;
   border-radius: 30px;
-  background: linear-gradient(135deg, #ffebee, #ffffff);
+  background: linear-gradient(135deg, #fffdfdff, #ffffff);
   color: #000000;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+  outline: none;
+  /* box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1); */
 }
 
 .search-block .titaned-search-bar input::placeholder {
@@ -98,7 +126,7 @@ hide:
 .search-block .titaned-search-bar input:focus {
   outline: none;
   border-color: #cc0000;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
 }
 
 /* Search Icon: Font Awesome magnifying glass with red accent */
@@ -112,7 +140,7 @@ hide:
   transform: translateY(-50%);
   font-size: 22px;
   color: #cc0000;
-  z-index: 31;
+  /* z-index: 31; */
 }
 
 .search-block .titaned-search-bar input:focus + ::before {
@@ -130,7 +158,7 @@ hide:
   border-radius: 20px;
   max-height: 400px;
   overflow-y: auto;
-  z-index: 50;
+  /* z-index: 50; */
   box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
   opacity: 0;
   transform: translateY(-15px);
@@ -178,24 +206,26 @@ hide:
 }
 
 /* Card Grid: Styles the 2x2 grid of cards */
+@media only screen and (min-width: 768px){
 .titaned-tile-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 30px;
-  padding: 32px 16px;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2, auto); */
+  gap: 15px;
+  /* padding: 32px 16px; */
   max-width: 900px;
   margin: 0 auto;
 }
+}
+
 
 /* Individual Card: Styles each card in the grid */
 .titaned-tile {
   background: #f8f8f8; /* Lighter for image contrast */
-  border: 1px solid #ddd;
+  border: .4px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 24px;
 }
 
 .titaned-tile:hover {
@@ -204,50 +234,60 @@ hide:
 }
 
 .titaned-tile a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 12px 16px;
+  gap: 16px;
   text-decoration: none;
   color: #000000;
-  padding: 0;
-  height: 100%;
 }
+
 
 /* Card Icon: Styles the image container */
 .titaned-tile__icon {
-  width: 120px;
-  height: 120px;
+  flex-shrink: 0;
+  border: 0px solid black;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f8f8f8;
 }
 
 .titaned-tile__icon img {
-  width: 100%;
+  width: 100%; 
   height: 100%;
   object-fit: contain;
 }
 
 /* Remove span styling as no longer used */
-.titaned-tile__icon span {
+/* .titaned-tile__icon span {
   font-size: 28px;
   color: #fff;
-}
+} */
+
+ .titaned-tile__text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+ }  
 
 /* Card Text: Styles the card title and description */
 .titaned-tile h3 {
-  font-size: 22px;
-  margin: 10px 0;
+  text-align: left;
+  font-size: 16px;
   color: #000000;
   overflow-wrap: break-word;
 }
 
 .titaned-tile p {
-  font-size: 16px;
-  text-align: center;
+  text-align: left;
+  font-size: 12px;
   color: #666;
-  margin: 0;
   overflow-wrap: break-word;
 }
 
@@ -492,11 +532,10 @@ hide:
     padding: 4px 8px;
   }
 
-  .titaned-tile-grid {
+  /* .titaned-tile-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 16px;
-  }
+  } */
 
   .titaned-tile {
     padding: 16px;
@@ -629,55 +668,67 @@ hide:
   <div class="titaned-tile">
     <a href="/TitanBi/TitanBi">
       <div class="titaned-tile__icon">
-        <img src="images/view-graph.gif" alt="TitanBI Analytics">
+        <img src="homepage_images/titanbi.png" alt="TitanBI Analytics">
       </div>
-      <h3>TitanBI</h3>
-      <p>Course and learner analytics.</p>
+      <div class="titaned-tile__text">
+        <h3>TitanBI</h3>
+        <p>Course and learner analytics.</p>
+      </div>
     </a>
   </div>
   <div class="titaned-tile">
     <a href="/Studio/What_Is_Studio">
       <div class="titaned-tile__icon">
-        <img src="images/online-lesson.gif" alt="Studio Course Creation">
+        <img src="homepage_images/studio.png" alt="Studio Course Creation">
       </div>
-      <h3>Studio</h3>
-      <p>Create engaging courses.</p>
+      <div class="titaned-tile__text">
+        <h3>Studio</h3>
+        <p>Create engaging courses.</p>
+      </div>
     </a>
   </div>
   <div class="titaned-tile">
     <a href="/LMS/lms_home_page_overview">
       <div class="titaned-tile__icon">
-        <img src="images/online-student.gif" alt="LMS Learner">
+        <img src="homepage_images/learner.png" alt="LMS Learner">
       </div>
-      <h3>LMS (Learner)</h3>
-      <p>Navigate courses and track learning.</p>
+      <div class="titaned-tile__text">
+        <h3>LMS (Learner)</h3>  
+        <p>Navigate courses and track learning.</p>
+      </div>
     </a>
   </div>
   <div class="titaned-tile">
     <a href="/LMS_ADMIN/LMS_Administration_Overview">
       <div class="titaned-tile__icon">
-        <img src="images/teacher.gif" alt="LMS Admin">
+        <img src="homepage_images/admin.png" alt="LMS Admin">
       </div>
-      <h3>LMS (Admin)</h3>
-      <p>Manage courses and users.</p>
+      <div class="titaned-tile__text">
+        <h3>LMS (Admin)</h3>
+        <p>Manage courses and users.</p>
+      </div>
     </a>
   </div>
   <div class="titaned-tile">
     <a href="faq">
       <div class="titaned-tile__icon">
-        <img src="images/management-consulting.gif" alt="LMS Admin">
+        <img src="homepage_images/controlhub.png" alt="LMS Admin">
       </div>
-      <h3>Control Hub</h3>
-      <p>Centralized Control for Efficient Platform Administration</p>
+      <div class="titaned-tile__text">
+        <h3>Control Hub</h3>
+        <p>Centralized Control for Efficient Platform Administration</p>
+      </div>
     </a>
   </div>
   <div class="titaned-tile">
     <a href="faq">
       <div class="titaned-tile__icon">
-        <img src="images/faq.gif" alt="LMS Admin">
+        <img src="homepage_images/faqs-icon.png" alt="LMS Admin">
       </div>
-      <h3>FAQs</h3>
-      <p>Find answers to common questions about using the platform.</p>
+      <div class="titaned-tile__text">
+        <h3>FAQs</h3>
+        <p>Find answers to common questions about using the platform.</p>
+      </div>
     </a>
   </div>
 </div>
