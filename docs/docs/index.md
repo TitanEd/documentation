@@ -666,7 +666,7 @@ hide:
 
 <div class="titaned-tile-grid">
   <div class="titaned-tile">
-    <a href="/documentation/TitanBi/TitanBi.html">
+    <a href="/documentation/TitanBi/TitanBi">
       <div class="titaned-tile__icon">
         <img src="homepage_images/titanbi.png" alt="TitanBI Analytics">
       </div>
