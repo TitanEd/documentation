@@ -3,6 +3,7 @@ extra_files:
   - CNAME
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.tabs
     - navigation.instant
@@ -28,6 +29,8 @@ theme:
         icon: material/lightbulb
         name: Switch to light mode
   logo: images/logo.png
+extra:
+  homepage_template: overrides/home.html
 
 extra_css:
   - stylesheets/custom.css
@@ -110,3 +113,31 @@ nav:
       - Billing and Subscription: Control_Hub/Billing_Subscription.md
   - FAQ: faq.md    
   - About Us: About Us.md
+  - Get Staeted:
+    - Welcome to TELS: Get_Started/Welcome_to_TELS.md
+    - Role Matrix & Permissions: Get_Started/Role_Matrix_&_Permissions.md
+    - Logging In & SSO Basics: Get_Started/Logging_In_&_SSO_Basics.md
+    - Quick-Start Video Tour: Get_Started/Quick-Start_Video_Tour.md
+  - Launch Your Site:
+    - Site Setup & Branding: Launch_Your_Site/Site_Setup_&_Branding.md
+    - Domain & SSL: Launch_Your_Site/Domain_&_SSL.md
+    - Single Sign-On (SAML / OAuth): Launch_Your_Site/Single_Sign-On.md
+    - User Provisioning: Launch_Your_Site/User_Provisioning.md
+  - Create & Teach:
+    - Create & Teach (Studio): Create_&_Teach_(Studio)/Create_&_Teach.md
+  - Learn & Progress (Learner):
+    - Learner Dashboard: Learn_&_Progress_(Learner)/Learner_Dashboard.md
+  - Track_Insights_(TitanBI)_Pro+:
+    - TitanBI Overview: Track_Insights_(TitanBI)_Pro+/TitanBI_Overview.md
+  - Unlock_TitanAI_Pro+:
+    - What is TitanAI?: Unlock_TitanAI_Pro+/What_is_TitanAI.md
+  - Integrations_&_APIs:
+    - LTI Tool Provider: Integrations_&_APIs/LTI_Tool_Provider.md
+  - Add-Ons_Catalog:
+    - Overview: Add-Ons_Catalog/Overview.md
+  - Release_Notes_&_Roadmap:
+    - Redwood Baseline (Open edX): Release_Notes_&_Roadmap/Redwood_Baseline.md
+  - Need a Fix? (Support):
+    - Common Issues & Self-Help: Need_a_Fix_(Support)/Common_Issues_&_Self-Help.md
+  - See a Demo:
+    - Step for demo: See_a_Demo/Step_for_demo.md
