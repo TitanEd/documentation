@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block header %}
+<!-- Add your custom UI modifications here -->
+<div class="container">
+    <header class="header">
+        <div class="headerBar">
+            <div class="compLogo">TitanEd</div>
+            <div class="headerItem">🌐 Lang</div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main class="body">
+        <section class="message">
+            <h1>How can we help?</h1>
+        </section>
+
+        <section class="searchContainer">
+            <input class="searchBar" type="text" placeholder="Search..." id="searchBar">
+            <div class="searchResult" id="searchResult">Search results will appear here...</div>
+        </section>
+    </main>
+</div>
+{% endblock %}
+
+{% block tabs %}
+<!-- Add your custom UI modifications here -->
+{% endblock %}
+
+
+{% block content %}
+{{ super() }}
+<!-- Add your custom UI modifications here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TitanEd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ 'stylesheets/home.css' | url }}">
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<!-- Include any additional scripts if needed -->
+{% endblock %}
