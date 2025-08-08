@@ -1,0 +1,236 @@
+/* ===== Base Styles ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #CEB6EB;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 12px auto;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Header ===== */
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerBar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.compLogo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3d1d6e;
+    letter-spacing: 0.5px;
+}
+
+.headerItem {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.headerItem:hover {
+    color: #2196F3;
+}
+
+/* ===== Main Content ===== */
+.body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2b2b2b;
+}
+
+/* ===== Search Box ===== */
+.searchContainer {
+    margin: 0 auto 30px;
+    max-width: 600px;
+    text-align: center;
+    width: 600px;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.searchBar:hover {
+    border-color: #2196F3;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+.searchBar:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 4px rgba(33, 150, 243, 0.4);
+}
+
+.searchResult {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* ===== Cards ===== */
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.cardContainer a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 15px rgba(33, 150, 243, 0.15);
+    border-color: #2196F3;
+    .cardTextTitle{
+        color: #3a72a0;
+    }
+
+}
+
+.cardLogo {
+    font-size: 2.3rem;
+    flex-shrink: 0;
+}
+
+.cardTextTitle {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+    color: black;
+}
+
+.cardTextDescription {
+    font-size: 0.92rem;
+    color: #555;
+}
+
+/* ===== Footer ===== */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: #ddd;
+    font-size: 0.85rem;
+    color: #444;
+    margin-top: auto;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 1024px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .searchBar {
+        font-size: 0.95rem;
+        padding: 12px 14px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+
+    .cardLogo {
+        font-size: 2rem;
+    }
+
+    .cardTextTitle {
+        font-size: 1rem;
+    }
+
+    .cardTextDescription {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+.md-main__inner{
+    margin-top: 0;
+    padding: 0;
+}
+
+.md-main__inner h1{
+    display: none;
+}
+
+.md-content__inner{
+    margin: 0;
+    padding: 0;
+}
+.content__inner{
+    margin: 0;
+    padding: 0;
+}
+.md-footer-meta{
+    display: none;
+}
+.md-main{
+    margin-bottom: 16px;
+}
