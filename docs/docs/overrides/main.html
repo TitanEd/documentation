@@ -5,8 +5,17 @@
 <div class="container">
     <header class="header">
         <div class="headerBar">
-            <div class="compLogo">TitanEd</div>
-            <div class="headerItem">🌐 Lang</div>
+            <div class="compLogo">
+                <img src="{{ 'images/logo.png' | url }}" alt="TitanEd Logo" style="height: 40px; vertical-align: middle;">
+            </div>
+            <div class="headerItem">
+                <select class="lang-switcher" onchange="window.location.href=this.value">
+                    <option value="/" data-lang="en">🌐 English</option>
+                    <option value="/#googtrans(en|hi)" data-lang="hi">हिन्दी</option>
+                    <option value="/#googtrans(en|tl)" data-lang="tl">Filipino</option>
+                    <option value="/#googtrans(en|fr)" data-lang="fr">Français</option>
+                </select>
+            </div>
         </div>
     </header>
     <!-- MAIN -->
@@ -50,6 +59,17 @@
 {% endblock %}
 
 {% block scripts %}
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'hi,tl,fr', // Languages from your 'alternate' config
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+
+</script>
+
 {{ super() }}
 <!-- Include any additional scripts if needed -->
 {% endblock %}

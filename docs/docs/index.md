@@ -30,7 +30,7 @@ hide:
           <div class="cardTextDescription">Courses & AI assist</div>
         </div>
       </a>
-      <a href="Learn_&_Progress_(Learner)/Learner_Dashboard" class="card">
+      <a href="/documentation/LMS/lms_home_page_overview" class="card">
         <div class="cardLogo">📈</div>
         <div class="cardText">
           <div class="cardTextTitle">Learn & Progress</div>
@@ -44,14 +44,14 @@ hide:
           <div class="cardTextDescription">Video + sandbox</div>
         </div>
       </a>
-      <a href="Unlock_TitanAI_Pro+/What_is_TitanAI" class="card">
+      <a href="/documentation/TitanAi/TitanAi" class="card">
         <div class="cardLogo">🤖</div>
         <div class="cardText">
           <div class="cardTextTitle">Unlock TitanAI</div>
           <div class="cardTextDescription">Smart authoring</div>
         </div>
       </a>
-      <a href="Track_Insights_(TitanBI)_Pro+/TitanBI_Overview" class="card">
+      <a href="/documentation/TitanBi/TitanBi/" class="card">
         <div class="cardLogo">📊</div>
         <div class="cardText">
           <div class="cardTextTitle">Track Insights</div>
@@ -65,7 +65,7 @@ hide:
           <div class="cardTextDescription">Plans & invoices</div>
         </div>
       </a>
-      <a href="Need_a_Fix_(Support)/Common_Issues_&_Self-Help" class="card">
+      <a href="/documentation/faq" class="card">
         <div class="cardLogo">🛠️</div>
         <div class="cardText">
           <div class="cardTextTitle">Need a Fix?</div>
@@ -79,3 +79,13 @@ hide:
       &copy; 2025 TitanEd
   </footer>
 </div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'ar,hi,fil', // Languages from your 'alternate' config
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
