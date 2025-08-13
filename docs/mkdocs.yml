@@ -31,19 +31,6 @@ theme:
   logo: images/logo.png
 extra:
   homepage_template: overrides/home.html
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: हिन्दी
-      link: /
-      lang: hi
-    - name: Filipino
-      link: /
-      lang: tl
-    - name: Français
-      link: /
-      lang: fr
 
 
 
