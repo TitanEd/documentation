@@ -31,13 +31,32 @@ theme:
   logo: images/logo.png
 extra:
   homepage_template: overrides/home.html
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: हिन्दी
+      link: /
+      lang: hi
+    - name: Filipino
+      link: /
+      lang: tl
+    - name: Français
+      link: /
+      lang: fr
+
+
 
 extra_css:
   - stylesheets/custom.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+  - https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap
+  - https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap
+  - https://fonts.googleapis.com/css2?family=Tajawal&display=swap
 
 extra_javascript:
   - https://unpkg.com/fuse.js@6.6.2/dist/fuse.min.js
+  - https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
 
 plugins:
   - search
@@ -111,6 +130,9 @@ nav:
       - Add on Configuration(Page,Blogs): Control_Hub/Add_on_ Configuration.md
       - Analytics Overview: Control_Hub/Analytics_Overview.md
       - Billing and Subscription: Control_Hub/Billing_Subscription.md
+  - TitanAi:
+      - TitanAi Demo: TitanAi/TitanAi.md    
+
   - FAQ: faq.md    
   - About Us: About Us.md
   - Get Staeted:
@@ -125,8 +147,6 @@ nav:
     - User Provisioning: Launch_Your_Site/User_Provisioning.md
   - Create & Teach:
     - Create & Teach (Studio): Create_&_Teach_(Studio)/Create_&_Teach.md
-  - Learn & Progress (Learner):
-    - Learner Dashboard: Learn_&_Progress_(Learner)/Learner_Dashboard.md
   - Track_Insights_(TitanBI)_Pro+:
     - TitanBI Overview: Track_Insights_(TitanBI)_Pro+/TitanBI_Overview.md
   - Unlock_TitanAI_Pro+:

@@ -534,3 +534,25 @@
 }
 
 
+/* Hide Google Translate feedback bar and iframe */
+.skiptranslate,
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
+}
+
+.VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c, 
+.VIpgJd-yAWNEb-hvhgNd-N7Eqid,
+.VIpgJd-yAWNEb-hvhgNd-xgov5,
+#goog-gt-thumbUpButton,
+#goog-gt-thumbDownButton,
+#goog-gt-votingHiddenPane {
+  display: none !important;
+}
+
+/* Style the custom header logo in home.html */
+.compLogo img {
+    width: 200px !important; /* Reduced from 500px for better fit */
+    height: auto !important; /* Auto height to maintain aspect ratio */
+    vertical-align: middle;
+    object-fit: contain; /* Prevent distortion */
+}
