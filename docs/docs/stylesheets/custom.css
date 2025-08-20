@@ -544,3 +544,34 @@
     vertical-align: middle;
     object-fit: contain; /* Prevent distortion */
 }
+
+
+/* Added by sonu 20/08/2025 */
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    left: 0;
+    top: 0;
+    height: 39px;
+    width: 100%;
+    z-index: 10000001;
+    position: fixed;
+    border: none;
+    border-bottom: 1px solid #6B90DA;
+    margin: 0;
+    box-shadow: 0 0 8px 1px #999;
+}
+
+.VIpgJd-yAWNEb-hvhgNd{
+  display: none;
+}
+
+
+
+.compLogo img {
+    width: 152px !important;
+    height: auto !important;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* close by sonu*/
