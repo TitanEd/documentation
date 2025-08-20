@@ -1,0 +1,577 @@
+/* Homepage Layout: Full-width styling only for the homepage (index.md) */
+.md-content--home .md-main__inner {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Commerce Message: Styles the promotional text above the search bar on homepage */
+.titaned-commerce-message {
+  text-align: center;
+  padding: 24px 16px;
+  margin: 32px auto 24px; /* Top and bottom margin for spacing */
+  max-width: 800px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000; /* Black from theme */
+}
+
+.titaned-commerce-message a {
+  color: #666; /* Grey accent */
+  text-decoration: underline;
+}
+
+.titaned-commerce-message a:hover {
+  color: #999; /* Lighter grey on hover */
+}
+
+/* Search Bar: Styles the large search input and results dropdown on homepage */
+.titaned-search-bar {
+  max-width: 1000px;
+  margin: 0 auto 48px; /* Bottom margin for gap between search and cards */
+  padding: 0 16px;
+  position: relative;
+}
+
+.titaned-search-bar input {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  border: 2px solid #000000; /* Black border */
+  border-radius: 8px;
+  background: #fff;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.titaned-search-bar input:focus {
+  outline: none;
+  border-color: #666; /* Grey on focus */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.titaned-search-results {
+  position: absolute;
+  top: 100%; /* Position right below the input */
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000; /* Ensure it stays above other content */
+  display: none; /* Hidden by default */
+}
+
+.titaned-search-result {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.titaned-search-result:last-child {
+  border-bottom: none;
+}
+
+.titaned-search-result a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.titaned-search-result a:hover {
+  color: #666;
+}
+
+/* Card Grid: Styles the 2x2 grid of cards for TitanBI, Studio, LMS (Learner), LMS (Admin) on homepage */
+.titaned-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px; /* Space between cards */
+  padding: 32px 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual Card: Styles each card in the grid */
+.titaned-tile {
+  background: #fff;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.titaned-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.titaned-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000; /* Black text */
+  padding: 20px;
+  height: 100%;
+}
+
+/* Card Icon: Styles the emoji/icon container */
+.titaned-tile__icon {
+  width: 50px;
+  height: 50px;
+  background: #000000; /* Black background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.titaned-tile__icon span {
+  font-size: 28px; /* Emoji size */
+  color: #fff;
+}
+
+/* Card Text: Styles the card title and description */
+.titaned-tile h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #000000;
+  overflow-wrap: break-word;
+}
+
+.titaned-tile p {
+  font-size: 14px;
+  text-align: center;
+  color: #666; /* Grey text */
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode: Adjustments for slate theme */
+[data-md-color-scheme="slate"] {
+  /* Commerce Message Dark Mode */
+  .titaned-commerce-message {
+    color: #fff;
+  }
+
+  .titaned-commerce-message a {
+    color: #bbb;
+  }
+
+  .titaned-commerce-message a:hover {
+    color: #ddd;
+  }
+
+  /* Search Bar Dark Mode */
+  .titaned-search-bar input {
+    background: #1e1e1e;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .titaned-search-bar input:focus {
+    border-color: #bbb;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .titaned-search-results {
+    background: #1e1e1e;
+    border-color: #fff;
+  }
+
+  .titaned-search-result a {
+    color: #fff;
+  }
+
+  .titaned-search-result a:hover {
+    color: #bbb;
+  }
+
+  /* Card Grid Dark Mode */
+  .titaned-tile {
+    background: #1e1e1e;
+    border-color: #444;
+  }
+
+  .titaned-tile a {
+    color: #fff;
+  }
+
+  .titaned-tile h3 {
+    color: #fff;
+  }
+
+  .titaned-tile p {
+    color: #bbb;
+  }
+
+  .titaned-tile__icon {
+    background: #000000;
+  }
+}
+
+/* Responsive Adjustments: For mobile devices */
+@media (max-width: 600px) {
+  .titaned-tile-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 16px;
+  }
+
+  .titaned-search-bar {
+    margin-bottom: 32px; /* Smaller gap on mobile */
+  }
+
+  .titaned-search-bar input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .titaned-commerce-message {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
+/* Advanced Search Bar: Site-wide search bar with gradient background and Font Awesome icon */
+.titaned-search-bar {
+  max-width: 800px;
+  margin: 32px auto 80px; /* Top margin for header spacing, large bottom gap */
+  padding: 0 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 100 !important; /* High z-index to avoid overlap */
+}
+
+/* Search Input: Modern input with gradient background and search icon */
+.titaned-search-bar input {
+  width: 100%;
+  padding: 18px 18px 18px 56px; /* Extra left padding for icon */
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif; /* Match Material for MkDocs */
+  border: 2px solid #000000 !important; /* Black border */
+  border-radius: 20px; /* Rounded corners */
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Subtle grey gradient */
+  color: #000000 !important;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.titaned-search-bar input::placeholder {
+  color: #666 !important; /* Grey placeholder */
+  opacity: 0.8;
+}
+
+.titaned-search-bar input:focus {
+  outline: none;
+  border-color: #666 !important; /* Grey on focus */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Deep shadow */
+  transform: scale(1.02); /* Subtle zoom effect */
+}
+
+/* Search Icon: Font Awesome magnifying glass */
+.titaned-search-bar::before {
+  content: '\f002'; /* Font Awesome search icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #666 !important; /* Grey icon */
+  z-index: 101;
+  transition: color 0.3s ease;
+}
+
+.titaned-search-bar input:focus + ::before {
+  color: #000000 !important; /* Black icon on focus */
+}
+
+/* Search Results Popup: Modern dropdown with smooth animation */
+.titaned-search-results {
+  position: absolute;
+  top: calc(100% + 12px); /* Gap below input */
+  left: 16px;
+  right: 16px;
+  background: #fff;
+  border: 1px solid #000000 !important;
+  border-radius: 20px;
+  max-height: 450px;
+  overflow-y: auto;
+  z-index: 150 !important; /* Above all elements */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3); /* Deep shadow */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: popupSlideIn 0.4s ease forwards;
+  padding: 12px;
+}
+
+/* Popup Animation */
+@keyframes popupSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Individual Search Result: Enhanced styling with hover effects */
+.titaned-search-result {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.titaned-search-result:last-child {
+  border-bottom: none;
+}
+
+.titaned-search-result a {
+  color: #000000 !important;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  padding: 10px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.titaned-search-result a:hover {
+  color: #666 !important;
+  background-color: #f0f0f0; /* Light grey hover */
+  transform: translateX(4px); /* Subtle slide effect */
+}
+
+/* Dark Mode: Adjustments for slate theme */
+[data-md-color-scheme="slate"] {
+  /* Search Bar */
+  .titaned-search-bar input {
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e) !important; /* Dark gradient */
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+
+  .titaned-search-bar input::placeholder {
+    color: #bbb !important;
+  }
+
+  .titaned-search-bar input:focus {
+    border-color: #bbb !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+
+  .titaned-search-bar::before {
+    color: #bbb !important;
+  }
+
+  .titaned-search-bar input:focus + ::before {
+    color: #fff !important;
+  }
+
+  /* Search Results */
+  .titaned-search-results {
+    background: #1e1e1e !important;
+    border-color: #fff !important;
+    box-shadow: 0 10px 24px rgba(255, 255, 255, 0.3);
+  }
+
+  .titaned-search-result a {
+    color: #fff !important;
+  }
+
+  .titaned-search-result a:hover {
+    color: #bbb !important;
+    background-color: #333 !important;
+  }
+}
+
+/* Responsive Adjustments: For mobile devices */
+@media (max-width: 600px) {
+  .titaned-search-bar {
+    margin: 24px auto 48px; /* Smaller margins */
+    padding: 0 12px;
+  }
+
+  .titaned-search-bar input {
+    padding: 14px 14px 14px 48px; /* Adjusted for icon */
+    font-size: 16px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  }
+
+  .titaned-search-bar::before {
+    left: 28px;
+    font-size: 18px;
+  }
+
+  .titaned-search-results {
+    left: 12px;
+    right: 12px;
+    max-height: 350px;
+    border-radius: 16px;
+    padding: 8px;
+  }
+
+  .titaned-search-result a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  [data-md-color-scheme="slate"] .titaned-search-bar input {
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e) !important;
+  }
+}
+
+/* Advanced Search Bar: Homepage-only search with gradient and icon */
+.md-content--home .titaned-search-bar {
+  max-width: 900px;
+  margin: 0 auto 100px; /* Larger gap to card grid */
+  padding: 0 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+
+/* Search Input: Stylish input with gradient background and icon */
+.md-content--home .titaned-search-bar input {
+  width: 100%;
+  padding: 20px 20px 20px 60px; /* Space for icon */
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #000000; /* Black border */
+  border-radius: 25px; /* Softer, modern corners */
+  background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Gradient background */
+  color: #000000;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Search Icon: Font Awesome magnifying glass */
+.md-content--home .titaned-search-bar::before {
+  content: '\f002'; /* Font Awesome search icon */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 24px; /* Adjusted for padding */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #666; /* Grey icon */
+  z-index: 31;
+}
+
+/* Input Focus State */
+.md-content--home .titaned-search-bar input:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Enhanced focus shadow */
+}
+
+/* Search Results Popup: Elegant dropdown with real-time updates */
+.md-content--home .titaned-search-results {
+  position: absolute;
+  top: calc(100% + 12px); /* Gap below input */
+  left: 16px;
+  right: 16px;
+  background: #fff;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  opacity: 0;
+  transform: translateY(-15px);
+  animation: popupSlideIn 0.4s ease forwards;
+  padding: 10px 0;
+}
+
+/* Slide-in animation for popup */
+@keyframes popupSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark Mode: Adjustments for slate theme */
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-bar input {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* Dark gradient */
+  color: #fff;
+  border-color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-bar::before {
+  color: #bbb; /* Light grey icon */
+}
+
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-bar input:focus {
+  border-color: #bbb;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-results {
+  background: #1e1e1e;
+  border-color: #fff;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-result a {
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-result a:hover,
+[data-md-color-scheme="slate"] .md-content--home .titaned-search-result a:focus {
+  color: #bbb;
+  background-color: #2a2a2a;
+}
+
+
+/* Hide Google Translate feedback bar and iframe */
+
+
+/* Style the custom header logo in home.html */
+.compLogo img {
+    width: 200px !important; /* Reduced from 500px for better fit */
+    height: auto !important; /* Auto height to maintain aspect ratio */
+    vertical-align: middle;
+    object-fit: contain; /* Prevent distortion */
+}
+
+
+/* Added by sonu 20/08/2025 */
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    left: 0;
+    top: 0;
+    height: 39px;
+    width: 100%;
+    z-index: 10000001;
+    position: fixed;
+    border: none;
+    border-bottom: 1px solid #6B90DA;
+    margin: 0;
+    box-shadow: 0 0 8px 1px #999;
+}
+
+.VIpgJd-yAWNEb-hvhgNd{
+  display: none;
+}
+
+
+
+.compLogo img {
+    width: 152px !important;
+    height: auto !important;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* close by sonu*/
