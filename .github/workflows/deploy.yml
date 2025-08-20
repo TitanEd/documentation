@@ -25,10 +25,10 @@ jobs:
           cd docs
           mkdocs build
 
-      - name: Ensure CNAME file exists
-        run: |
-          cd docs
-          echo "docs.titaned.com" > site/CNAME
+      # - name: Ensure CNAME file exists
+      #   run: |
+      #     cd docs
+      #     echo "docs.titaned.com" > site/CNAME
 
       - name: Deploy MkDocs
         run: |
